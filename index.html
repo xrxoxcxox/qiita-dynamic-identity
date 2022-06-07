@@ -15,15 +15,20 @@
     }
     .container {
       display: grid;
+      grid-template-columns: 1fr 50% 1fr;
       height: 100%;
-      place-items: center;
+      width: 100%;
+    }
+    .image {
+      align-self: center;
+      grid-column: 2 / 3;
       width: 100%;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img alt="" src="./logo.svg">
+    <img alt="" src="./logo.svg" class="image">
   </div>
 </body>
 </html>
